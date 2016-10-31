@@ -1,0 +1,13 @@
+<h1>anhmantk - My First Angular App</h1>
+<div>{{title}}</div>
+{{version}}
+<hr />
+<ol>
+    <li *ngFor="let item of listStudent">{{item}}</li>
+</ol>
+<hr />
+<ol>
+    <li *ngFor="let item of listStudents">{{item.name}} - {{item.age}}</li>
+</ol>
+<input type="button" value="Change title" (click)="onClickBtn()" >
+<input [(ngModel)]="student.name" placeholder="Please enter your name">
